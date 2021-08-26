@@ -10,7 +10,7 @@ export class NewsapiservicesService {
   constructor(private _http:HttpClient) { }
 
   //newsapiurl
-  newsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=83b8106a041e42d9a772d26dc71940ea"
+  newsApiUrl = "https://newsapi.org/v2/top-headlines?country=in&apiKey=83b8106a041e42d9a772d26dc71940ea"
 
   //topHeading()
   topHeading():Observable<any>
