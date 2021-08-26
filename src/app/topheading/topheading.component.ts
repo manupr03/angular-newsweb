@@ -7,12 +7,15 @@ import {NewsapiservicesService} from '../service/newsapiservices.service'
   styleUrls: ['./topheading.component.css']
 })
 export class TopheadingComponent implements OnInit {
-
   constructor(private _services:NewsapiservicesService) { }
+  //display data
+  topheadingDisplay:any = []
+
 
   ngOnInit(): void {
     this._services.topHeading().subscribe((result) => {
       console.log(result)
+      this.topheadingDisplay = result.articles
     })
   }
 
