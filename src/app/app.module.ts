@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { NewsapiservicesService } from './service/newsapiservices.service';
 import { TechnewsComponent } from './technews/technews.component';
 import { BusinessnewsComponent } from './businessnews/businessnews.component'
+// for HttpClient import:
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { BusinessnewsComponent } from './businessnews/businessnews.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LoadingBarHttpClientModule
   ],
   providers: [NewsapiservicesService],
   bootstrap: [AppComponent]
